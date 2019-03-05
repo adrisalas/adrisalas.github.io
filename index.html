@@ -20,7 +20,7 @@
             background-color: #5D5C61;
         }
 
-        .nav {
+        .navbox {
             top: 0;
             bottom: 0;
             left: 0;
@@ -32,6 +32,19 @@
             background-color: #557A95CC;
         }
 
+        .inner{
+            position: relative;
+            padding: 12%;
+            align-content: center;
+        }
+
+        .cardbox{
+            position: relative;
+            text-align: center;
+        }
+        .cardbox-avatar{
+            border-radius: 50%;
+        }
         .main {
             margin-left: 25%;
             font-size: 18px;
@@ -41,18 +54,32 @@
 
 <body>
     <div class='body'>
-        <aside class='nav'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt sit amet lorem ac accumsan.
-                Vestibulum ac nulla luctus, cursus nunc vitae, ullamcorper felis. Aliquam diam leo, efficitur eget
-                tortor ut, rutrum feugiat augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Integer non ornare turpis, quis tempus lorem. Donec semper, sem vel faucibus
-                tristique, velit nunc mattis leo, nec tempus nisi nunc a ipsum. Nulla sed ante a sapien tincidunt
-                mattis. Vestibulum at scelerisque mi, non pellentesque quam. Etiam tempus, quam vestibulum vestibulum
-                hendrerit, lorem purus consectetur urna, sit amet tincidunt sapien nulla at nunc. Aenean nec suscipit
-                dui, in vulputate mauris. Duis vitae erat nisi. Sed hendrerit auctor nibh a consequat. Vivamus at sapien
-                augue. Aliquam finibus diam ac mi elementum, nec imperdiet ipsum ultrices.
-            </p>
+        <aside class='navbox'>
+            <div class='inner'>
+                <div class='cardbox'>
+                    <img class='cardbox-avatar' src='images/profile.jpg' width="150px"></img>
+                    <h1>ADRIÁN SALAS TROYA</h1>
+                    <h3>SOFTWARE ENGINEER</h3>
+                </div>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt sit amet lorem ac accumsan.
+                    Vestibulum ac nulla luctus, cursus nunc vitae, ullamcorper felis. Aliquam diam leo, efficitur eget
+                    tortor ut, rutrum feugiat augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Integer non ornare turpis, quis tempus lorem. Donec semper, sem vel faucibus
+                    tristique, velit nunc mattis leo, nec tempus nisi nunc a ipsum. Nulla sed ante a sapien tincidunt
+                    mattis. Vestibulum at scelerisque mi, non pellentesque quam. Etiam tempus, quam vestibulum
+                    vestibulum
+                    hendrerit, lorem purus consectetur urna, sit amet tincidunt sapien nulla at nunc. Aenean nec
+                    suscipit
+                    dui, in vulputate mauris. Duis vitae erat nisi. Sed hendrerit auctor nibh a consequat. Vivamus at
+                    sapien
+                    augue. Aliquam finibus diam ac mi elementum, nec imperdiet ipsum ultrices.
+                </p>
+            </div>
         </aside>
+
+
+
         <div class='main'>
             <div style="background-color: #5D5C61">
                 <p>Hola, texto de ejemplo</p>
