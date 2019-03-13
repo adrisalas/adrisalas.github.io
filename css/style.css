@@ -84,6 +84,15 @@
             font-size: 18px;
         }
 
+        .main-paper{
+            background: url("/images/paper.png") repeat;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            bottom: 0;
+            right: 0;
+        }
+
         .home {
             padding: 10% 5%;
             color: #fff;
