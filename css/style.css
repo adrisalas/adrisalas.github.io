@@ -85,12 +85,17 @@
         }
 
         .main-paper{
-            background: url("/images/paper.png") repeat;
             position: absolute;
-            top: 0;
             left: 20%;
-            bottom: 0;
-            right: 0;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            background: url("/images/paper.png") repeat top center;
+            font-size: 18px;
+        }
+        .main-content{
+            padding: 7.5% 5%;
+            color: black;
         }
 
         .home {
