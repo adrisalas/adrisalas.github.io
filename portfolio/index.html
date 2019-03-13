@@ -17,16 +17,11 @@
     <style>
         html {
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            top: 0px;
-            bottom: 0px;
-            right: 0px;
-            left: 0px;
-            background: url("images/background.jpg") no-repeat top center;
+            background: url("images/background.jpg") no-repeat top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
-            background-attachment: fixed;
             background-color: #5D5C61;
         }
 
@@ -111,6 +106,10 @@
             font-size: 18px;
         }
 
+        .main-content{
+            padding: 7.5% 5%;
+            color: black;
+        }
         .home {
             padding: 10% 5%;
             color: #fff;
@@ -148,14 +147,14 @@
 </head>
 
 <body>
-    <div class='body'>
+    <div>
         <aside class='aside'>
             <div class='inner'>
                 <a class='cardbox' href='/'>
                     <img class='cardbox-avatar' src='images/profile.jpg' width="150px"></img>
                     <br>
                     <br>
-                    <h2 class='cardbox-h2'>ADRIÁN SALAS TROYA</h2>
+                    <h2 class='cardbox-h2'>ADRIÁN SALAS</h2>
                     <p>SOFTWARE ENGINEER</p>
                 </a>
                 <br>
@@ -167,13 +166,13 @@
                                 <td><a href="" class="navlink-selected">PORTFOLIO</a></td>
                             </tr>
                             <tr>
-                                <td><a href="./test.html" class="navlink">MY CV</a></td>
+                                <td><a href="/" class="navlink">MY CV</a></td>
                             </tr>
                             <tr>
-                                <td><a href="./test.html" class="navlink">GALLERY</a></td>
+                                <td><a href="/" class="navlink">GALLERY</a></td>
                             </tr>
                             <tr>
-                                <td><a href="./test.html" class="navlink">CONTACT ME</a></td>
+                                <td><a href="/" class="navlink">CONTACT ME</a></td>
                             </tr>
                         </table>
                     </div>
@@ -193,12 +192,14 @@
         </aside>
 
         <div class='main'>
+            <div class='main-content'>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
