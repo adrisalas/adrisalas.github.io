@@ -14,7 +14,7 @@
             left: 0;
             position: fixed;
             overflow: hidden;
-            width: 400px;
+            width: 20%;
             color: #fff;
             text-align: left;
             background-color: #557A95CC;
@@ -45,7 +45,7 @@
         }
 
         .navbar {
-            line-height: 20pt;
+            line-height: 1em;
         }
 
         .navlink {
