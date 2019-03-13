@@ -1,0 +1,119 @@
+        html {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            background: url("/images/background.jpg") no-repeat top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: #5D5C61;
+        }
+
+        .aside {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            overflow: hidden;
+            width: 20%;
+            color: #fff;
+            text-align: left;
+            background-color: #557A95CC;
+        }
+
+        .inner {
+            position: relative;
+            padding: 12%;
+            align-content: center;
+        }
+
+        .cardbox {
+            position: relative;
+            text-align: center;
+            display: block;
+            -webkit-font-smoothing: antialiased;
+            color: inherit;
+            text-decoration: none;
+        }
+        .cardbox:hover {
+            text-decoration: none;
+        }
+        .cardbox-avatar {
+            border-radius: 50%;
+        }
+        .cardbox-h2 {
+            margin-bottom: 0.2em;
+        }
+
+        .navbar {
+            line-height: 20pt;
+        }
+
+        .navlink {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+        .navlink:hover {
+            opacity: 1;
+        }
+
+        .navlink-selected {
+            color: #fff;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        .social {
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .icon {
+            color: #fff;
+            padding-right: 2px;
+            opacity: 0.5;
+        }
+
+        .icon:hover {
+            opacity: 1;
+        }
+
+        .main {
+            margin-left: 25%;
+            font-size: 18px;
+        }
+
+        .home {
+            padding: 10% 5%;
+            color: #fff;
+        }
+
+        .home-title {
+            display: block;
+            font-size: 3em;
+            margin-top: 0.67em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .home-subtitle {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0em;
+            margin-bottom: 1.5em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.8;
+        }
+
+        .home-p {
+            display: block;
+            font-size: 1em;
+            margin-top: 0.4em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.7;
+        }
