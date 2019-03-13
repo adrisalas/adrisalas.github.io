@@ -12,172 +12,188 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
+        html {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
         body {
-            background: url("images/background.png") no-repeat top center;
+            background: url("images/background.jpg") no-repeat top center;
             background-size: cover;
             background-attachment: fixed;
             background-color: #5D5C61;
         }
 
-        .navbox {
+        .aside {
             top: 0;
             bottom: 0;
             left: 0;
             position: fixed;
             overflow: hidden;
-            width: 25%;
+            width: 20%;
             color: #fff;
             text-align: left;
             background-color: #557A95CC;
         }
 
-        .inner{
+        .inner {
             position: relative;
             padding: 12%;
             align-content: center;
         }
 
-        .cardbox{
+        .cardbox {
             position: relative;
             text-align: center;
+            line-height: 6pt;
+            display: block;
+            -webkit-font-smoothing: antialiased;
+            color: inherit;
+            text-decoration: none;
         }
-        .cardbox-avatar{
+
+        .cardbox:hover {
+            text-decoration: none;
+        }
+
+        .cardbox-avatar {
             border-radius: 50%;
         }
+
+        .navbar {
+            line-height: 20pt;
+        }
+
+        .navlink {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+        .navlink:hover {
+            opacity: 1;
+        }
+
+        .navlink-selected {
+            color: #fff;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        .social {
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .icon {
+            color: #fff;
+            padding-right: 2px;
+            opacity: 0.5;
+        }
+
+        .icon:hover {
+            opacity: 1;
+        }
+
         .main {
             margin-left: 25%;
             font-size: 18px;
+        }
+
+        .home {
+            padding: 10% 5%;
+            color: #fff;
+        }
+
+        .home-title {
+            display: block;
+            font-size: 3em;
+            margin-top: 0.67em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .home-subtitle {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0em;
+            margin-bottom: 1.5em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.8;
+        }
+
+        .home-p {
+            display: block;
+            font-size: 1em;
+            margin-top: 0.4em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.7;
         }
     </style>
 </head>
 
 <body>
     <div class='body'>
-        <aside class='navbox'>
+        <aside class='aside'>
             <div class='inner'>
-                <div class='cardbox'>
+                <a class='cardbox' href='/'>
                     <img class='cardbox-avatar' src='images/profile.jpg' width="150px"></img>
-                    <h1>ADRIÁN SALAS TROYA</h1>
-                    <h3>SOFTWARE ENGINEER</h3>
-                </div>
+                    <br>
+                    <br>
+                    <h2>ADRIÁN SALAS TROYA</h2>
+                    <p>SOFTWARE ENGINEER</p>
+                </a>
+                <br>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt sit amet lorem ac accumsan.
-                    Vestibulum ac nulla luctus, cursus nunc vitae, ullamcorper felis. Aliquam diam leo, efficitur eget
-                    tortor ut, rutrum feugiat augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                    posuere cubilia Curae; Integer non ornare turpis, quis tempus lorem. Donec semper, sem vel faucibus
-                    tristique, velit nunc mattis leo, nec tempus nisi nunc a ipsum. Nulla sed ante a sapien tincidunt
-                    mattis. Vestibulum at scelerisque mi, non pellentesque quam. Etiam tempus, quam vestibulum
-                    vestibulum
-                    hendrerit, lorem purus consectetur urna, sit amet tincidunt sapien nulla at nunc. Aenean nec
-                    suscipit
-                    dui, in vulputate mauris. Duis vitae erat nisi. Sed hendrerit auctor nibh a consequat. Vivamus at
-                    sapien
-                    augue. Aliquam finibus diam ac mi elementum, nec imperdiet ipsum ultrices.
-                </p>
+                <div class='navbar'>
+                    <div class='links'>
+                        <table>
+                            <tr>
+                                <td><a href="#" class="navlink-selected">PORTFOLIO</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="navlink">MY CV</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="navlink">GALLERY</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="navlink">CONTACT ME</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div class='social'>
+                        <a class="icon" href="mailto:example@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a class="icon" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="icon" href="https://www.github.com" target="_blank"><i
+                                class="fab fa-github-square"></i></a>
+                        <a class="icon" href="https://www.twitter.com" target="_blank"><i
+                                class="fab fa-twitter-square"></i></a>
+                    </div>
+
+                </div>
+
             </div>
         </aside>
 
-
-
         <div class='main'>
-            <div style="background-color: #5D5C61">
-                <p>Hola, texto de ejemplo</p>
+            <div class='home'>
+                <p class="home-title"><b>Hi, I'm Adri,</b></p>
+                <p class="home-subtitle">an enthusiast with technology and software development.</p>
+                <p class="home-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
             </div>
-            <div style="background-color: #379683">
-                <p>Hola, texto de ejemplo</p>
-            </div>
-            <div style="background-color: #7395AE">
-                <p>Hola, texto de ejemplo</p>
-            </div>
-            <div style="background-color: #557A95">
-                <p>Hola, texto de ejemplo</p>
-            </div>
-            <div style="background-color: #B1A296">
-                <p>Hola, texto de ejemplo</p>
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt sit amet lorem ac accumsan.
-                Vestibulum ac nulla luctus, cursus nunc vitae, ullamcorper felis. Aliquam diam leo, efficitur eget
-                tortor ut, rutrum feugiat augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Integer non ornare turpis, quis tempus lorem. Donec semper, sem vel faucibus
-                tristique, velit nunc mattis leo, nec tempus nisi nunc a ipsum. Nulla sed ante a sapien tincidunt
-                mattis. Vestibulum at scelerisque mi, non pellentesque quam. Etiam tempus, quam vestibulum vestibulum
-                hendrerit, lorem purus consectetur urna, sit amet tincidunt sapien nulla at nunc. Aenean nec suscipit
-                dui, in vulputate mauris. Duis vitae erat nisi. Sed hendrerit auctor nibh a consequat. Vivamus at sapien
-                augue. Aliquam finibus diam ac mi elementum, nec imperdiet ipsum ultrices.
-            </p>
-            <p>
-                Mauris nec quam imperdiet, bibendum nisi id, luctus erat. Suspendisse id est ex. Quisque placerat lacus
-                sit amet lectus ornare, at interdum enim fermentum. Fusce feugiat, est eu pulvinar cursus, diam risus
-                venenatis ante, eget tincidunt sem ligula at dui. Donec odio risus, egestas eu enim quis, aliquam
-                consequat purus. Aliquam a est sed quam posuere congue quis vel lectus. Sed id facilisis nibh. Aenean
-                ante mauris, bibendum at nisi ac, pharetra faucibus ex.
-            </p>
-            <p>
-                Proin hendrerit justo at mi dignissim lacinia. Aenean lacinia sollicitudin accumsan. Morbi dapibus eros
-                id maximus iaculis. Curabitur non facilisis lacus, sed hendrerit turpis. Nullam laoreet massa sed augue
-                vulputate, id feugiat libero condimentum. Nulla ut vulputate risus. Etiam ultricies velit urna, a
-                dapibus nisl gravida luctus. Ut sit amet mattis tellus. Morbi vel mollis odio, a rhoncus nulla. Fusce
-                eget mollis nulla. Sed eleifend fermentum enim ut tempor. Nullam semper posuere molestie. Praesent porta
-                dui leo, vel ultricies lorem luctus nec. Fusce posuere condimentum eros, in dignissim est eleifend vel.
-            </p>
-            <p>
-                Donec semper lectus et gravida tristique. Mauris faucibus finibus nulla non lobortis. Integer vel
-                sodales magna. Aliquam vel sapien et leo aliquam tempor sed at justo. In vulputate aliquam hendrerit.
-                Morbi varius, felis ut molestie placerat, elit ante sollicitudin lectus, mollis egestas quam nisi quis
-                ipsum. Maecenas ultrices nunc et sem tincidunt, sed cursus purus tempus. Vestibulum sit amet viverra
-                diam.
-            </p>
-            <p>
-                Sed congue risus non dolor tincidunt, et lacinia nibh aliquet. Nulla quis purus augue. Donec vel dapibus
-                felis. Nulla quis vestibulum massa. Phasellus facilisis lectus non arcu finibus, nec varius turpis
-                mollis. Fusce tempor porta nisi eget dapibus. Nam ut metus ac diam fermentum mattis at id diam. Ut
-                lacinia ac velit a molestie. Nulla tristique tortor eu mauris iaculis venenatis. In hac habitasse platea
-                dictumst. Maecenas eget lorem pellentesque, vulputate orci eget, pulvinar nisl. Suspendisse rhoncus
-                vehicula tincidunt. Morbi egestas gravida turpis, a dignissim nunc vestibulum sed.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt sit amet lorem ac accumsan.
-                Vestibulum ac nulla luctus, cursus nunc vitae, ullamcorper felis. Aliquam diam leo, efficitur eget
-                tortor ut, rutrum feugiat augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Integer non ornare turpis, quis tempus lorem. Donec semper, sem vel faucibus
-                tristique, velit nunc mattis leo, nec tempus nisi nunc a ipsum. Nulla sed ante a sapien tincidunt
-                mattis. Vestibulum at scelerisque mi, non pellentesque quam. Etiam tempus, quam vestibulum vestibulum
-                hendrerit, lorem purus consectetur urna, sit amet tincidunt sapien nulla at nunc. Aenean nec suscipit
-                dui, in vulputate mauris. Duis vitae erat nisi. Sed hendrerit auctor nibh a consequat. Vivamus at sapien
-                augue. Aliquam finibus diam ac mi elementum, nec imperdiet ipsum ultrices.
-            </p>
-            <p>
-                Mauris nec quam imperdiet, bibendum nisi id, luctus erat. Suspendisse id est ex. Quisque placerat lacus
-                sit amet lectus ornare, at interdum enim fermentum. Fusce feugiat, est eu pulvinar cursus, diam risus
-                venenatis ante, eget tincidunt sem ligula at dui. Donec odio risus, egestas eu enim quis, aliquam
-                consequat purus. Aliquam a est sed quam posuere congue quis vel lectus. Sed id facilisis nibh. Aenean
-                ante mauris, bibendum at nisi ac, pharetra faucibus ex.
-            </p>
-            <p>
-                Proin hendrerit justo at mi dignissim lacinia. Aenean lacinia sollicitudin accumsan. Morbi dapibus eros
-                id maximus iaculis. Curabitur non facilisis lacus, sed hendrerit turpis. Nullam laoreet massa sed augue
-                vulputate, id feugiat libero condimentum. Nulla ut vulputate risus. Etiam ultricies velit urna, a
-                dapibus nisl gravida luctus. Ut sit amet mattis tellus. Morbi vel mollis odio, a rhoncus nulla. Fusce
-                eget mollis nulla. Sed eleifend fermentum enim ut tempor. Nullam semper posuere molestie. Praesent porta
-                dui leo, vel ultricies lorem luctus nec. Fusce posuere condimentum eros, in dignissim est eleifend vel.
-            </p>
-            <p>
-                Donec semper lectus et gravida tristique. Mauris faucibus finibus nulla non lobortis. Integer vel
-                sodales magna. Aliquam vel sapien et leo aliquam tempor sed at justo. In vulputate aliquam hendrerit.
-                Morbi varius, felis ut molestie placerat, elit ante sollicitudin lectus, mollis egestas quam nisi quis
-                ipsum. Maecenas ultrices nunc et sem tincidunt, sed cursus purus tempus. Vestibulum sit amet viverra
-                diam.
-            </p>
-            <p>
-                Sed congue risus non dolor tincidunt, et lacinia nibh aliquet. Nulla quis purus augue. Donec vel dapibus
-                felis. Nulla quis vestibulum massa. Phasellus facilisis lectus non arcu finibus, nec varius turpis
-                mollis. Fusce tempor porta nisi eget dapibus. Nam ut metus ac diam fermentum mattis at id diam. Ut
-                lacinia ac velit a molestie. Nulla tristique tortor eu mauris iaculis venenatis. In hac habitasse platea
-                dictumst. Maecenas eget lorem pellentesque, vulputate orci eget, pulvinar nisl. Suspendisse rhoncus
-                vehicula tincidunt. Morbi egestas gravida turpis, a dignissim nunc vestibulum sed.
-            </p>
         </div>
     </div>
 </body>
