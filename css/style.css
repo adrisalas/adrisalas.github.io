@@ -1,6 +1,6 @@
         html {
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            background: url("/images/background.jpg") no-repeat top center fixed;
+            background: url("../images/background.jpg") no-repeat top center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -90,7 +90,7 @@
             top: 0px;
             bottom: 0px;
             right: 0px;
-            background: url("/images/paper.png") repeat top center;
+            background: url("../images/paper.png") repeat top center;
             font-size: 18px;
         }
         .main-content{
