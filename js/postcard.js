@@ -21,18 +21,18 @@ function postcard() {
     for (var i = 0; i < postcard.length; i++) {
         if (postcard[i] == '$') {
             newPostcard[i] = 'h';
-        } else if (postcard[i] == '4') {
-            newPostcard[i] = 'e';
-        } else if (postcard[i] == 'R') {
-            newPostcard[i] = 'l';
-        } else if (postcard[i] == '?') {
-            newPostcard[i] = 'o';
+        } else if (postcard[i] == '!') {
+            newPostcard[i] = 'd';
         } else if (postcard[i] == 'G') {
             newPostcard[i] = 'i';
         } else if (postcard[i] == 'ñ') {
             newPostcard[i] = 'Ñ';
+        } else if (postcard[i] == '_') {
+            newPostcard[i] = 'c';
         } else if (postcard[i] == '*') {
             newPostcard[i] = 'k';
+        } else if (postcard[i] == 'z') {
+            newPostcard[i] = '.';
         } else if (postcard[i] == ':') {
             newPostcard[i] = 'f';
         } else if (postcard[i] == 'x') {
@@ -41,18 +41,18 @@ function postcard() {
             newPostcard[i] = '@';
         } else if (postcard[i] == '@') {
             newPostcard[i] = 'a';
-        } else if (postcard[i] == '!') {
-            newPostcard[i] = 'd';
+        } else if (postcard[i] == '?') {
+            newPostcard[i] = 'o';
+        } else if (postcard[i] == '4') {
+            newPostcard[i] = 'e';
         } else if (postcard[i] == 'M') {
             newPostcard[i] = 'r';
         } else if (postcard[i] == 'q') {
             newPostcard[i] = 'i';
         } else if (postcard[i] == '5') {
             newPostcard[i] = 's';
-        } else if (postcard[i] == 'z') {
-            newPostcard[i] = '.';
-        } else if (postcard[i] == '_') {
-            newPostcard[i] = 'c';
+        } else if (postcard[i] == 'R') {
+            newPostcard[i] = 'l';
         } else if (postcard[i] == 'h') {
             newPostcard[i] = 'm';
         } else {
