@@ -27,6 +27,16 @@ function postcard() {
             newPostcard[i] = 'l';
         } else if (postcard[i] == '?') {
             newPostcard[i] = 'o';
+        } else if (postcard[i] == 'G') {
+            newPostcard[i] = 'i';
+        } else if (postcard[i] == 'ñ') {
+            newPostcard[i] = 'Ñ';
+        } else if (postcard[i] == '*') {
+            newPostcard[i] = 'k';
+        } else if (postcard[i] == ':') {
+            newPostcard[i] = 'f';
+        } else if (postcard[i] == 'x') {
+            newPostcard[i] = 'b';
         } else if (postcard[i] == 'p') {
             newPostcard[i] = '@';
         } else if (postcard[i] == '@') {
