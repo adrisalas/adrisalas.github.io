@@ -20,13 +20,13 @@
             background-color: #557A95CC;
         }
 
-        .inner {
+        .aside-inner {
             position: relative;
             padding: 12%;
             align-content: center;
         }
 
-        .cardbox {
+        .aside-cardbox {
             position: relative;
             text-align: center;
             display: block;
@@ -34,17 +34,17 @@
             color: inherit;
             text-decoration: none;
         }
-        .cardbox:hover {
+        .aside-cardbox:hover {
             text-decoration: none;
         }
-        .cardbox-avatar {
+        .aside-cardbox-avatar {
             border-radius: 50%;
         }
-        .cardbox-h2 {
+        .aside-cardbox-h2 {
             margin-bottom: 0.2em;
         }
 
-        .navbar {
+        .aside-navbar {
             line-height: 1em;
         }
 
@@ -64,7 +64,7 @@
             opacity: 1;
         }
 
-        .social {
+        .aside-social {
             font-size: 24px;
             text-decoration: none;
         }
@@ -90,12 +90,41 @@
             top: 0px;
             bottom: 0px;
             right: 0px;
-            background: url("../images/paper.png") repeat top center;
             font-size: 18px;
         }
         .main-content{
-            padding: 7.5% 5%;
+            z-index: 0;
+            padding: 5% 0%;
+            position: absolute;
+            left: 5%;
+            right: 10%;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
             color: black;
+        }     
+
+        .article{
+            position: static;
+        }
+
+        .article-info {
+            z-index: 1;
+            position: absolute;
+            width: 5%;
+            background: #fff;
+            left: -5%;
+            padding: 0.5% 0.5%;
+            border-top-left-radius: 4%;
+            border-bottom-left-radius: 4%;
+            
+        }
+        .article-content {
+            background: white;
+            position: relative;
+            padding: 2%;
+            width: 85%;
+            min-height: 30%;
         }
 
         .home {
