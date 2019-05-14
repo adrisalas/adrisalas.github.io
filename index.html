@@ -1,51 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-        @media only screen and (max-width: 280px) {
-            body, p {
-                width: 95%;
-            }
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-        }
-    </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Adrián Salas Troya is a Software Engineer specialized in agile methodologies. This webpage is his portfolio">
+  <meta name="keywords" content="Adrián, Salas, Troya, Software, Engineer">
+  <meta name="author" content="Adrian Salas">
+
+  <title>Adrian Salas - About</title>
+
+  <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="dist/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Page not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-    <br>
-    <p>Old web: <a href="https://www.salastroya.com">www.salastroya.com</a></p>
+
+<body id="page-top bg">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#">
+      <span class="d-block d-lg-none">Adrián Salas</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.jpg" alt="">
+        <h4>ADRIÁN SALAS</h4>
+        <h5>SOFTWARE ENGINEER</h5>
+        <hr>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0 main-text-home">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Adrián
+          <span class="text-primary">Salas</span>
+        </h1>
+        <div class="subheading mb-5">Software Engineer · English · Spanish ·
+          <a id='email'></a>
+        </div>
+        <p class="lead mb-5">I am an university student studying Sofware Engineering, I have robust skills on Software
+          Development and a width knowdledge in different technologies. In this webpage you will find some of my
+          projects</p>
+        <div class="social-icons">
+          <a href="https://es.linkedin.com/in/adrisalas">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/adrisalas">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/adrisalas_">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a id='emailIcon'>
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
 </body>
+<script src="dist/jquery/jquery.min.js"></script>
+<script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/postcard.js"></script>
+<script>
+  var a = document.getElementById("email");
+  var linkText = postcard();
+  a.innerHTML = linkText;
+  a.href = "mailto:" + linkText;
+  a = document.getElementById("emailIcon");
+  a.href = "mailto:" + linkText;
+</script>
+
 </html>
