@@ -1,209 +1,162 @@
-    /* 
-    *Color Pallete Old:
-    *Grey:       #5D5C61
-    *Green:      #379683
-    *LightBlue:  #7395AE
-    *Blue:       #557A95
-    *Beige:      #B1A296 
-    */
+        html {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            background: url("../images/background.jpg") no-repeat top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: #5D5C61;
+        }
 
-    /*Ciklum colors
-    *Orange: #F06428
-    *Light Blue: #00AAF0
-    *Purple: #50468C
-    *White: #F0F0F0
-    */
+        .aside {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            overflow: hidden;
+            width: 20%;
+            color: #fff;
+            text-align: left;
+            background-color: #557A95CC;
+        }
 
-body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 54px;
-  color: #cdcdcd;
-  height: 100%;
-  background: url("../img/background.jpg") no-repeat top center fixed;
-  background-size: cover;
-}
+        .aside-inner {
+            position: relative;
+            padding: 12%;
+            align-content: center;
+        }
 
-.main-text-home {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-}
+        .aside-cardbox {
+            position: relative;
+            text-align: center;
+            display: block;
+            -webkit-font-smoothing: antialiased;
+            color: inherit;
+            text-decoration: none;
+        }
+        .aside-cardbox:hover {
+            text-decoration: none;
+        }
+        .aside-cardbox-avatar {
+            border-radius: 50%;
+        }
+        .aside-cardbox-h2 {
+            margin-bottom: 0.2em;
+        }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
+        .aside-navbar {
+            line-height: 1em;
+        }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #F0F0F0;
-}
+        .navlink {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.5;
+        }
 
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
-}
+        .navlink:hover {
+            opacity: 1;
+        }
 
-h2 {
-  font-size: 3.5rem;
-}
+        .navlink-selected {
+            color: #fff;
+            text-decoration: none;
+            opacity: 1;
+        }
 
-h3 {
-  font-size: 2rem;
-}
+        .aside-social {
+            font-size: 24px;
+            text-decoration: none;
+        }
 
-p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
-}
+        .icon {
+            color: #fff;
+            padding-right: 2px;
+            opacity: 0.5;
+        }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.5rem;
-}
+        .icon:hover {
+            opacity: 1;
+        }
 
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #00AAF0;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-}
+        .main {
+            margin-left: 25%;
+            font-size: 18px;
+        }
 
-.social-icons a:last-child {
-  margin-right: 0;
-}
+        .main-paper{
+            position: absolute;
+            left: 20%;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            font-size: 18px;
+        }
+        .main-content{
+            z-index: 0;
+            padding: 5% 0%;
+            position: absolute;
+            left: 5%;
+            right: 10%;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            color: black;
+        }     
 
-.social-icons a:hover {
-  background-color:  #50468C;
-}
+        .article{
+            position: static;
+        }
 
-.dev-icons {
-  font-size: 3rem;
-}
+        .article-info {
+            z-index: 1;
+            position: absolute;
+            width: 5%;
+            background: #fff;
+            left: -5%;
+            padding: 0.5% 0.5%;
+            border-top-left-radius: 4%;
+            border-bottom-left-radius: 4%;
+            
+        }
+        .article-content {
+            background: white;
+            position: relative;
+            padding: 2%;
+            width: 85%;
+            min-height: 30%;
+        }
 
-.dev-icons .list-inline-item i:hover {
-  color: #F06428;
-}
+        .home {
+            padding: 10% 5%;
+            color: #fff;
+        }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-}
+        .home-title {
+            display: block;
+            font-size: 3em;
+            margin-top: 0.67em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+        }
 
-#sideNav .navbar-toggler:focus {
-  outline-color: #F06428;
-}
+        .home-subtitle {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0em;
+            margin-bottom: 1.5em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.8;
+        }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #00AAF0CC !important;
-}
-
-.text-primary {
-  color: #F06428 !important;
-}
-
-a {
-  color: #F06428;
-}
-
-a:hover, a:focus, a:active {
-  color: #F06428;
-}
+        .home-p {
+            display: block;
+            font-size: 1em;
+            margin-top: 0.4em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 0.7;
+        }
