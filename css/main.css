@@ -13,7 +13,9 @@
     *Purple: #50468C
     *White: #F0F0F0
     */
-
+html {
+  height: 100%;
+}
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
@@ -21,10 +23,13 @@ body {
   height: 100%;
   background: url("../img/background-dark.jpg") no-repeat top center fixed;
   background-size: cover;
+  height: 100%;
 }
 
 .main-text-home {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    min-height: 100%;
+    height: 100%;
 }
 
 @media (min-width: 992px) {
