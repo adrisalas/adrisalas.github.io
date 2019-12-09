@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="./css/minimalism-dark.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <p>hi</p>
+    <button onclick="change()">Click me!</button>
+</body>
+
+<script>
+    function change() {
+        console.log(localStorage.getItem("style"));
+        var oldlink = document.getElementsByTagName("link").item(0);
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        if (localStorage.getItem("style") == 0 || localStorage.getItem("style") == undefined){
+            newlink.setAttribute("href", "./css/minimalism-light.css");
+            localStorage.setItem("style",1);
+        } else {
+            newlink.setAttribute("href", "./css/minimalism-dark.css");
+            localStorage.setItem("style",0);
+        }
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+    }
+</script>
+
+</html>
