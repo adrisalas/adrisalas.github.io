@@ -1,6 +1,6 @@
 function postcard() {
     /*C0d3d_3m41l_c5st0m*/
-    var postcard = "h?()WET1_z5@%%UY3ffR21AbAb21@)5qeM99!@p?#R=R4$";
+    var postcard = "h?))_z@Py?MD5d32@(&YR@5p-qM!d23@";
     var newPostcard = "";
 
     /*String to Array*/
@@ -55,10 +55,16 @@ function postcard() {
             newPostcard[i] = 'l';
         } else if (postcard[i] == 'h') {
             newPostcard[i] = 'm';
-        } else {
+        } else if (postcard[i] == 'D') {
+            newPostcard[i] = 't';
+        } else if (postcard[i] == 'y') {
+            newPostcard[i] = 'y';
+        } else { //@!Mq p 5@R@5 DM?y@ z _?h
+                 //adri @ salas troya . com
+            // h?_z@y?MD5@R@5pqM!@
         }
     }
-
+                /*@!MGp5@R@5*/
     /*newPostcard to String*/
     newPostcard = newPostcard.join("");
     return newPostcard;
