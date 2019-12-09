@@ -198,7 +198,13 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #00AAF0CC !important;
+  background-color: rgb(0, 168, 240) !important;
+}
+
+@media (min-width: 992px) {
+  .bg-primary {
+    background-color: #00AAF0CC !important;
+  }
 }
 
 .text-primary {
