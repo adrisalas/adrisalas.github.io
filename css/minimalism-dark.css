@@ -161,11 +161,7 @@ body {
     
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
-    /*-webkit-text-stroke: 0.45px;
-    // or*/
-    -webkit-text-stroke: 0.55px rgba(242, 242, 242, 0.85);
-    /* or
-    text-shadow: #fff 0px 1px 1px;*/
+
     text-rendering: geometricPrecision; 
     font-size: 1.275em;
     letter-spacing: 0px; 
@@ -177,14 +173,18 @@ body {
 }
 
 strong {
-    font-family: 'Atlas Grotesk', serif; 
-    font-weight: 500;
-    text-decoration: none;
+    font-family: 'Atlas Grotesk', sans-serif;
+    font-weight: 300;
+
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
-    /*-webkit-text-stroke: 0.45px;
-    // or*/
-    -webkit-text-stroke: 0.55px rgba(242, 242, 242, 0.77);
+
+    text-rendering: geometricPrecision; 
+    letter-spacing: 0px; 
+    color: #50FA7B;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 } 
 
 em {
